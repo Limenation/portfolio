@@ -1,0 +1,9 @@
+Django中建立APP与models
+APP：
+	实现一种功能的组件，一个空的框架，靠models中方法实现APP的功能
+models：实现各种功能的小程序
+APP创建：用命令行创建，在要在创建APP的目录下运行python manage.py startapp gallery，并在setting中INSTALLED_APPS中注册一下，'gallery.apps.GalleryConfig',
+models建好之后也要注册，在admin中
+迁移到数据库中，命令行中python manage.py makemigrations和python manage.py migrate
+可以在网站的管理员界面添加所创建的models
+访问，在function中导入models，赋予变量，传到字典中，在主页中把字典显示出来
